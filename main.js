@@ -22,7 +22,7 @@ const { getIpv4MappedIpv6Address } = require(path.join(__dirname, 'ipv6.js'));
   Assign the class definition to variable IPCIDR.
 */
 const IPCIDR = require('ip-cidr');
-
+const log = require('./runtime/logger')
 /**
  * Calculate and return the first host IP address from a CIDR subnet.
  * @param {string} cidrStr - The IPv4 subnet expressed
